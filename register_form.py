@@ -19,15 +19,60 @@ frame_food.place(x=25, y=30)
 # frame_drinks = Frame(frame_options, width=350, height=200, bg="#eba2a2")
 # frame_drinks.place(x=25, y=380)
 label_food = Label(frame_food, 
-              text="Comida",
+              text="Datos Generales",
               font=("Calibri", "22", "bold"),
               fg="white",
               bg="#d48df0")
-label_food.place(x=20, y=290)
+                
+label_food.place(x=20, y=10)
+
+#ingreso del correo
+
+Label(frame_food,
+      text="Correo",
+      font=("Calibri", "14"),
+      fg="white",
+      bg="#d48df0").place(x=20, y=70)
+
+correo = Entry(frame_food)
+correo.place(x=90, y=75)
+
+#ingreso de la clave
+
+Label(frame_food,
+      text="Password",
+      font=("Calibri", "14"),
+      fg="white",
+      bg="#d48df0").place(x=20, y=140)
+
+password = Entry(frame_food)
+password.place(x=110, y=145)
+
+#Ingreso de la edad
+
+Label(frame_food,
+      text="Edad",
+      font=("Calibri", "14"),
+      fg="white",
+      bg="#d48df0").place(x=20, y=210)
+
+edad = Entry(frame_food)
+edad.place(x=70, y=215)
+
+#Boton de envio a la base de datos
+
+boton = Button(frame_food,
+               text="registrarse",
+               font=("Calibri", "14"),
+               fg="white",
+               bg="gold3")
+
+boton.place(x=120, y=270)
+
 
 # Widgets dentro del contender NAVBAR
 title = Label(frame_navbar, 
-              text="Menú",
+              text="Datos",
               font=("Calibri", "14"))
 title.place(x=320, y=40)
 
